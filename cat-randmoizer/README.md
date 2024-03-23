@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/tmussa1/cat-project/tree/master/cat-randmoizer/animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/tmussa1/cat-project/blob/master/cat-randmoizer/Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
