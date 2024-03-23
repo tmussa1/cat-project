@@ -16,7 +16,7 @@ export type Cat = {
 };
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [_, setLoading] = useState(false);
   const [bannedCatIds, setBannedCatIds] = useState<number[]>([]);
   const [breedId, setBreedId] = useState<number>(
     Math.round(Math.random() * breedLength)
