@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# Web Development Project 4 - Cat Randomizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: Tofik Mussa
 
-Currently, two official plugins are available:
+This web app: Pulls random images of cats and their breed's details
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Time spent: 3
 
-## Expanding the ESLint configuration
+## Required Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The following **required** functionality is completed:
 
-- Configure the top-level `parserOptions` property like this:
+- [x] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
+- [x] **Only one item/API call is viewable at a time**
+- [x] **API calls appear random to the user**
+- [x] **At least one image is displayed per API call**
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+The following **optional** features are implemented:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [ ] Multiple types of attributes can be added to the ban list
+- [ ] Users can see a stored history of their previously viewed items from their session
+
+The following **additional** features are implemented:
+
+- [x] List anything else that you added to improve the site's functionality!
+- I made sure that a banned breed can not be banned for the second time
+- Displayed wikipedia in a blue format
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/tmussa1/cat-project/tree/master/cat-randmoizer/animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+
+GIF created with ...
+
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+- Styling images correctly
+
+## License
+
+    Copyright [2024] [Tofik Mussa]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
