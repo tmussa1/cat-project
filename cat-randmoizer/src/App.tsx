@@ -59,7 +59,8 @@ function App() {
   }
 
   function banCat(): void {
-    setBannedCatIds([...bannedCatIds, breedId]);
+    if (!bannedCatIds.includes(breedId))
+      setBannedCatIds([...bannedCatIds, breedId]);
   }
 
   return (
@@ -72,7 +73,7 @@ function App() {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-around",
           marginBottom: "16px",
         }}
       >
@@ -85,6 +86,14 @@ function App() {
           wiki={currentCat?.wiki}
           alt={currentCat?.alt}
         />
+        <div>
+          <h2 style={{ color: "red" }}>Banned Breeds</h2>
+          <ul style={{ color: "red" }}>
+            {bannedCatIds.map((cat) => (
+              <li key={cat}>{BREEDS[cat]}</li>
+            ))}
+          </ul>
+        </div>
       </div>
       <div
         style={{
@@ -106,7 +115,7 @@ function App() {
           className="btn btn-md btn-danger"
           onClick={banCat}
         >
-          Ban This Cat
+          Ban This Cat Breed
         </button>
       </div>
     </>

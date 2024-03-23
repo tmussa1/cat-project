@@ -4,7 +4,7 @@ import { Cat } from "./App";
 function CatCard({ url, description, id, country, weight, wiki, alt }: Cat) {
   return (
     <Card style={{ width: "54rem" }}>
-      <Card.Img variant="top" src={url} alt={alt} width={256} height={320} />
+      <Card.Img variant="top" src={url} alt={alt} width={256} height={330} />
       <Card.Body>
         <Card.Title>
           <h6>
